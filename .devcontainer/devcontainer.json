@@ -1,0 +1,15 @@
+{
+    "name": "AtCoder",
+    "dockerComposeFile": "./docker-compose.yml",
+    "service": "atcoder",
+    "remoteUser": "atcoder",
+    "workspaceFolder": "/app",
+    "customizations": {
+	  "vscode": {
+		"extensions": [
+            "JuliaLang.language-julia",
+            "SanaAjani.taskrunnercode"
+		]
+	  }
+	}
+}

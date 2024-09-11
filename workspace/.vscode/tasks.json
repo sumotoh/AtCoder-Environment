@@ -1,0 +1,75 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "[abc] Init Tasks for AtCoder",
+            "type": "shell",
+            "command": "bash",
+            "args": [
+                "-c",
+                "acc new ${input:[abc] Init Tasks for AtCoder}"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}/src/abc"
+            },
+            "presentation": {
+                "reveal": "always",
+                "focus": true,
+                "panel": "shared"
+            }
+        },
+        {
+            "label": "[arc] Init Tasks for AtCoder",
+            "type": "shell",
+            "command": "bash",
+            "args": [
+                "-c",
+                "acc new ${input:[arc] Init Tasks for AtCoder}"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}/src/arc"
+            },
+            "presentation": {
+                "reveal": "always",
+                "focus": true,
+                "panel": "shared"
+            }
+        },
+        {
+            "label": "Test Task for AtCoder",
+            "type": "shell",
+            "command": "oj",
+            "args": [
+                "t",
+                "-c",
+                "\"julia ${file}\"",
+                "-d",
+                "${fileDirname}/tests/"
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            }
+        },
+        {
+            "label": "Submit Task for AtCoder",
+            "type": "shell",
+            "command": "acc submit ${file}",
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": []
+        }
+    ],
+    "inputs": [
+        {
+            "id": "[abc] Init Tasks for AtCoder",
+            "description": "ダウンロードするabcのコンテスト名を入力してください (例: abc123)",
+            "type": "promptString"
+        },
+        {
+            "id": "[arc] Init Tasks for AtCoder",
+            "description": "ダウンロードするarcのコンテスト名を入力してください (例: arc123)",
+            "type": "promptString"
+        }
+    ]
+}
