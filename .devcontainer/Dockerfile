@@ -5,6 +5,10 @@ ARG DEBIAN_FRONTEND=noninteractive
 
 WORKDIR /app
 
+ENV DEBIAN_FRONTEND noninteractive
+ENV LC_ALL=C.UTF-8
+ENV LANG=C.UTF-8
+
 # 起動シェルをshからbashに変更
 SHELL ["/bin/bash", "-c"]
 
@@ -58,10 +62,6 @@ RUN pip install online-judge-tools==11.5.1
 # # acc configの設定を行う
 # RUN acc config default-task-choice all
 # RUN acc config template julia
-
-# # atcoderユーザーを作成し、/appディレクトリの所有権を変更
-# RUN useradd -m -s /bin/bash atcoder && \
-#     chown -R atcoder:atcoder /app
 
 # ユーザーを作成し、ディレクトリの所有権を変更
 RUN useradd -m -s /bin/bash atcoder && \

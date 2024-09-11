@@ -16,7 +16,8 @@
                 "reveal": "always",
                 "focus": true,
                 "panel": "shared"
-            }
+            },
+            "problemMatcher": [],
         },
         {
             "label": "[arc] Init Tasks for AtCoder",
@@ -33,10 +34,11 @@
                 "reveal": "always",
                 "focus": true,
                 "panel": "shared"
-            }
+            },
+            "problemMatcher": [],
         },
         {
-            "label": "Test Task for AtCoder",
+            "label": "[Julia] Test Task for AtCoder",
             "type": "shell",
             "command": "oj",
             "args": [
@@ -48,17 +50,86 @@
             ],
             "options": {
                 "cwd": "${fileDirname}"
-            }
+            },
+            "problemMatcher": [],
         },
         {
-            "label": "Submit Task for AtCoder",
+            "label": "[R] Test Task for AtCoder",
             "type": "shell",
-            "command": "acc submit ${file}",
+            "command": "oj",
+            "args": [
+                "t",
+                "-c",
+                "\"Rscript ${file}\"",
+                "-d",
+                "${fileDirname}/tests/"
+            ],
             "options": {
                 "cwd": "${fileDirname}"
             },
+            "problemMatcher": [],
+        },
+        // {
+        //     "label": "Submit Task for AtCoder",
+        //     "type": "shell",
+        //     "command": "acc submit ${file}",
+        //     "options": {
+        //         "cwd": "${fileDirname}"
+        //     },
+        //     "problemMatcher": []
+        // },
+        {
+            "label": "Remove Del Comments",
+            "type": "shell",
+            "command": "sed",
+            "args": [
+              "-i",
+              "/^# Del/c\\",
+              "${file}"
+            ],
+            "options": {
+              "cwd": "${fileDirname}"
+            },
             "problemMatcher": []
-        }
+          },
+          {
+            "label": "[Julia] Submit Task for AtCoder",
+            "type": "shell",
+            "command": "acc",
+            "args": [
+              "submit",
+              "${file}",
+              "--",
+              "-l",
+              "5022"
+            ],
+            "options": {
+              "cwd": "${fileDirname}"
+            },
+            "dependsOn": [
+              "Remove Del Comments"
+            ],
+            "problemMatcher": []
+          },
+          {
+            "label": "[R] Submit Task for AtCoder",
+            "type": "shell",
+            "command": "acc",
+            "args": [
+              "submit",
+              "${file}",
+              "--",
+              "-l",
+              "5011"
+            ],
+            "options": {
+              "cwd": "${fileDirname}"
+            },
+            "dependsOn": [
+              "Remove Del Comments"
+            ],
+            "problemMatcher": []
+          }
     ],
     "inputs": [
         {
