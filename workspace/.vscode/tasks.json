@@ -2,7 +2,7 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "[abc] Init Tasks for AtCoder",
+            "label": "[I-abc] Init Tasks for AtCoder",
             "type": "shell",
             "command": "bash",
             "args": [
@@ -20,7 +20,7 @@
             "problemMatcher": [],
         },
         {
-            "label": "[arc] Init Tasks for AtCoder",
+            "label": "[I-arc] Init Tasks for AtCoder",
             "type": "shell",
             "command": "bash",
             "args": [
@@ -38,7 +38,7 @@
             "problemMatcher": [],
         },
         {
-            "label": "[Julia] Test Task for AtCoder",
+            "label": "[T-Julia] Test Task for AtCoder",
             "type": "shell",
             "command": "oj",
             "args": [
@@ -54,7 +54,7 @@
             "problemMatcher": [],
         },
         {
-            "label": "[R] Test Task for AtCoder",
+            "label": "[T-R] Test Task for AtCoder",
             "type": "shell",
             "command": "oj",
             "args": [
@@ -93,7 +93,7 @@
             "problemMatcher": []
           },
           {
-            "label": "[Julia] Submit Task for AtCoder",
+            "label": "[S-Julia] Submit Task for AtCoder",
             "type": "shell",
             "command": "acc",
             "args": [
@@ -112,7 +112,7 @@
             "problemMatcher": []
           },
           {
-            "label": "[R] Submit Task for AtCoder",
+            "label": "[S-R] Submit Task for AtCoder",
             "type": "shell",
             "command": "acc",
             "args": [
