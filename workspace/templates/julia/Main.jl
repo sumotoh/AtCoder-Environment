@@ -3,8 +3,8 @@
 # Del 一列の整数(N)を受け取る。
 # Del N = parse(Int, readline())
 # Del 
-# Del 一列の文字列(N)を文字(str)として受け取る
-# Del N = readline()
+# Del 一列の文字列(S)を文字(str)として受け取る
+# Del S = readline()
 # Del 
 # Del 一列の数字を数字として受け取る.floatならIntをFloat64に
 # Del a = parse(Int, readline())
@@ -25,8 +25,8 @@
 # Del println()
 # Del 
 # Del ショートカット
-# Del Alt + t : テストの実行
-# Del Alt + s Alt + u : 提出(altを押しながらs,uを押す)
+# Del Alt + t Alt+j: テストの実行
+# Del Alt + s Alt + j : 提出(altを押しながらs,jを押す)
 
 function main()
 
