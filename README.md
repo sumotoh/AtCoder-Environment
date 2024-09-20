@@ -116,6 +116,12 @@ clone(2.)するだけで使用できます。<br>
 
 【参考サイト】
 
+- keybinding per workspace
+https://stackoverflow.com/questions/48945319/a-keybindings-json-per-workspace-in-visual-studio-code
+
+- install specific R version in Docker
+https://stackoverflow.com/questions/78749769/install-specific-version-of-r-langauge-r4-x-x-on-a-docker-image-based-on-ubunt
+
 - AtCoder の環境を Docker で作りたい
 https://qiita.com/tf63/items/c93c6f24d73599e637d8#%E3%83%86%E3%82%B9%E3%83%88%E3%81%AE%E5%AE%9F%E8%A1%8C
 
