@@ -2,12 +2,12 @@ version: '3.3'
 services:
     atcoder:
         build:
-            context: ../
+            context: .
             dockerfile: .devcontainer/Dockerfile
         container_name: atcoder
         stdin_open: true
         tty: true
         volumes:
             # - ./:/app
-            - ../workspace:/app
-            - ../workspace/templates:/home/atcoder/.config/atcoder-cli-nodejs
+            - ./workspace:/app
+            - ./workspace/templates:/home/atcoder/.config/atcoder-cli-nodejs
