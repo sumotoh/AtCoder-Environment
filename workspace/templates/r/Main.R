@@ -31,6 +31,3 @@
 # Del cat(answer)
 # Del cat("\n")
 # Del 
-# Del ショートカット
-# Del Alt + t : テストの実行
-# Del Alt + s Alt + u : 提出(altを押しながらs,uを押す)

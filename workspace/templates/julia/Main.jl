@@ -24,9 +24,6 @@
 # Del 標準出力
 # Del println()
 # Del 
-# Del ショートカット
-# Del Alt + t Alt+j: テストの実行
-# Del Alt + s Alt + j : 提出(altを押しながらs,jを押す)
 
 function main()
 
