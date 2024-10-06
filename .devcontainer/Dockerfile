@@ -14,10 +14,6 @@ ENV DEBIAN_FRONTEND noninteractive
 
 RUN apt-get update \
   && apt-get install -y --no-install-recommends \
-#   software-properties-common \
-#   dirmngr \
-#   gnupg2 \
-#   wget \
   time \
   tzdata \
   tree \
@@ -32,13 +28,6 @@ RUN ln -fs /usr/share/zoneinfo/Asia/Tokyo /etc/localtime
 # Install Node.js (using Node.js 19 as an example)
 RUN curl -fsSL https://deb.nodesource.com/setup_19.x | bash - && \
     apt-get install -y nodejs
-
-# # install R
-# RUN wget -qO- https://cloud.r-project.org/bin/linux/ubuntu/marutter_pubkey.asc \
-#   | tee -a /etc/apt/trusted.gpg.d/cran_ubuntu_key.asc \
-#   && add-apt-repository -y "ppa:marutter/rrutter4.0" \
-#   && apt-get update -y \
-#   && apt-get install -y r-base
 
 # install R version specification
 # ここでRのバージョンを指定してください
