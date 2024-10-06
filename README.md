@@ -72,7 +72,7 @@ clone(2.)するだけで使用できます。<br>
     こうしておくと問題を読み込んだとき、Rのテンプレートが一緒に付いてきます。 <br>
     Juliaを使う場合は、rの部分をjuliaにしてください。
     ```{.shell}
-    acc config default-template: r
+    acc config default-template r
     ```
 
     問題を読み込むとき、(例えばabc101を読み込んだとき)a問題からe問題のすべての問題を自動で読み込みたいときは以下を設定してください。
